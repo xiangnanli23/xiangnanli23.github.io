@@ -1,0 +1,147 @@
+/* ====== 通用样式 ====== */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ====== 导航栏 ====== */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.navbar h1 a {
+  color: #222;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.nav-right a {
+  margin-left: 25px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-right a:hover,
+.nav-right a.active {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+}
+
+/* ====== 主体布局 ====== */
+main {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* 左栏（头像 + 联系方式） */
+.left-column {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.contact-icons a {
+  color: #444;
+  font-size: 22px;
+  margin: 0 8px;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-icons a:hover {
+  color: #1a73e8;
+}
+
+/* 右栏（个人介绍 + 教育经历） */
+.right-column {
+  flex: 2 1 500px;
+}
+
+.right-column h2 {
+  color: #222;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 4px;
+  margin-top: 0;
+}
+
+.education-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.education-list li {
+  margin-bottom: 10px;
+}
+
+/* ====== 页脚 ====== */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== 响应式布局 ====== */
+@media (max-width: 700px) {
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-column h2 {
+    border-bottom: none;
+  }
+
+  .nav-right {
+    text-align: right;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

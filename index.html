@@ -1,22 +1,56 @@
----
-# In YAML Front Matter, you define page-specific variables.
-# The 'layout' variable tells Jekyll which layout file from your _layouts folder to use.
-# 'default' is a common layout, but your theme might use 'home', 'page', or another name.
-# Check your theme's documentation if you're unsure.
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xiangnan Li</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- 使用 Font Awesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-<div class="hero" style="text-align: center; padding: 4em 1em; background-color: #f8f9fa;">
-  <img src="./assets/images/xiangnanli01.jpg" alt="A photo of Xiangnan Li" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-bottom: 1em;">
-  <h1 style="font-size: 2.5em; margin-bottom: 0.2em;">Xiangnan Li</h1>
-  <p style="font-size: 1.2em; color: #6c757d;">To learn, to cope.</p>
-  <!-- <p>
-    <a href="[Your LinkedIn URL]" style="margin: 0 10px;">LinkedIn</a> |
-    <a href="[Your GitHub URL]" style="margin: 0 10px;">GitHub</a> |
-    <a href="[Your Twitter/X URL]" style="margin: 0 10px;">Twitter</a>
-  </p> -->
-</div>
+<body>
+  <!-- 顶部导航栏 -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h1><a href="index.html">Xiangnan Li</a></h1>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="blogs.html">Blogs</a>
+      </div>
+    </nav>
+  </header>
 
-## About Me
-Hello! I'm Xiangnan Li. This website is under construction.
+  <main>
+    <!-- 个人介绍区域 -->
+    <section class="intro-section">
+      
+      <div class="left-column">
+        <img src="assets/images/xiangnanli.jpg" alt="Photo" class="profile-photo">
+        <div class="contact-icons">
+          <a href="mailto:lixiangnan1123@outlook.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/xiangnanli23" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/xiangnanli" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/yourname" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <h2>About Me</h2>
+        <p>
+          I am currently an algorithm engineer at Baidu.
+          Previously, I received the B. Sc. degree in Opto-Electronics Information Science and Engineering from <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a> in 2021.
+          My research interests include computer vision, deep learning, and deep generative models.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Xiangnan Li</p>
+  </footer>
+</body>
+</html>
