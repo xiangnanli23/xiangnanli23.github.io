@@ -68,8 +68,9 @@ main {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 15px;
 }
 
@@ -103,6 +104,95 @@ main {
 
 .education-list li {
   margin-bottom: 10px;
+}
+
+/* ====== 页面区块 ====== */
+.page-section h2 {
+  color: #222;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 4px;
+  margin-top: 0;
+}
+
+.highlights-section {
+  margin-top: 40px;
+}
+
+.highlights-section h2 {
+  color: #222;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 4px;
+  margin-top: 0;
+}
+
+.highlight-list {
+  padding-left: 20px;
+}
+
+.highlight-list li {
+  margin-bottom: 12px;
+}
+
+/* ====== 论文列表 ====== */
+.publication-list {
+  margin-top: 24px;
+}
+
+.publication-item {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.publication-title {
+  font-size: 18px;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.publication-title a {
+  color: #222;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  color: #1a73e8;
+}
+
+.publication-authors {
+  margin: 0 0 4px;
+  color: #555;
+}
+
+.publication-venue {
+  margin: 0 0 10px;
+  color: #777;
+  font-style: italic;
+}
+
+.publication-abstract {
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.publication-links a {
+  color: #1a73e8;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.publication-links a:hover {
+  text-decoration: underline;
+}
+
+.publication-links i {
+  margin-right: 4px;
 }
 
 /* ====== 页脚 ====== */
